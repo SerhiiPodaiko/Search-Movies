@@ -12,9 +12,9 @@ const Filters = (props) => {
                         id="sort_by"
                         onChange={onChangeFilters}>
                     <option value="popularity.desc">Популярні за спаданням</option>
-                    <option value="popularity.asc">Популярні за зростанню</option>
+                    <option value="popularity.asc">Популярні за зростанням</option>
                     <option value="vote_average.desc">Рейтинг за спаданням</option>
-                    <option value="vote_average.asc">Рейтинг за зростанню</option>
+                    <option value="vote_average.asc">Рейтинг за зростанням</option>
                 </select>
             </div>
         </form>
