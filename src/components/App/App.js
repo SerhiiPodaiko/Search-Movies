@@ -69,13 +69,13 @@ class App extends Component {
         return (
             <div className="container">
                 <div className="row mt-4">
-                    <div className="col-12 mb-3">
+                    <div className="col-md-12 mb-3">
                         <SearchPanel
                             searchTerm={searchTerm}
                             searchMovies={this.searchMovies}
                             handleOnChange={this.handleOnChange}  />
                     </div>
-                    <div className="col-4">
+                    <div className="col-md-4">
                         <div className="card" style={{ width: '100% '}}>
                             <div className="card-body">
                                 <h3>Фільтри</h3>
@@ -84,7 +84,7 @@ class App extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-8">
+                    <div className="col-md-8">
                         <MovieList
                             filters={filters}
                             getMovies={this.getMovies}
