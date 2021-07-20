@@ -1,5 +1,7 @@
 import React from "react";
 
+import NotFound from '../../not-found.png';
+
 const MovieItem = (props) => {
     const {item} = props;
 
@@ -9,9 +11,12 @@ const MovieItem = (props) => {
     };
 
     return (
+
         <div className="card">
             <img className="card-img-top card-img--height"
-                 src={`https://image.tmdb.org/t/p/w500${item.backdrop_path || item.poster_path}`} alt=""/>
+                 src={`https://image.tmdb.org/t/p/w500${item.backdrop_path || item.poster_path}`}
+                 onError={(e) => {e.target.onerror = null; e.target.src = NotFound}}
+                 alt=""/>
             <div className="card-body">
                 <div className="card-title">{item.title}</div>
                 <div className="card-text">Рейтинг: {item.vote_average}</div>

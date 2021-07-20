@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-import './App.css';
 import MovieList from "../MovieList";
 import Filters from "../Filters";
 import SearchPanel from "../SearchPanel";
