@@ -10,7 +10,7 @@ class App extends Component {
     state = {
         movies: [],
         filters: {
-            sort_by: `vote_average.asc`
+            sort_by: `popularity.desc`
         },
         searchTerm: ''
     };

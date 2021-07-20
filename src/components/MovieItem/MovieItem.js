@@ -11,9 +11,9 @@ const MovieItem = (props) => {
     };
 
     return (
-
-        <div className="card">
-            <img className="card-img-top card-img--height"
+        <div className="card" style={{ maxHeight: '400px', marginBottom: '20px' }}>
+            <img style={{ maxHeight: '200px'}}
+                className="card-img-top card-img--height"
                  src={`https://image.tmdb.org/t/p/w500${item.backdrop_path || item.poster_path}`}
                  onError={(e) => {e.target.onerror = null; e.target.src = NotFound}}
                  alt=""/>
